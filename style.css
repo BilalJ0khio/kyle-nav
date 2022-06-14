@@ -57,7 +57,7 @@ nav > :last-child {
 }
 
 header > nav li :nth-child(n):hover,
-header > nav > li :nth-child(n):focus {
+header > nav li :nth-child(n):focus {
   background-color: hsl(0, 0%, 95%, 0.4);
 }
 
