@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.3%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  font-size: 1.6rem;
+}
+header > :first-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav li {
+  list-style: none;
+  /* border: 1px solid whitesmoke; */
+}
+
+header a {
+  text-decoration: none;
+
+  cursor: pointer;
+  /* border: 1px solid whitesmoke; */
+  /* display: inline-block; */
+  padding: 0.5em 0.7em;
+  font-size: 1.8rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+header div {
+  padding: 0.7em 0.7em;
+  font-size: 2rem;
+  font-weight: bold;
+  /* border: 1px solid whitesmoke; */
+}
+
+header > nav {
+  background-color: hsl(0, 0%, 20%);
+}
+
+header > nav :nth-child(n) {
+  color: hsl(0, 0%, 95%);
+  text-transform: capitalize;
+}
+
+nav > :last-child {
+  display: flex;
+  gap: 0.5em;
+}
+
+header > nav li :nth-child(n):hover,
+header > nav > li :nth-child(n):focus {
+  background-color: hsl(0, 0%, 95%, 0.4);
+}
+
+@media screen and (max-width: 600px) {
+  header > :first-child {
+    flex-direction: column;
+  }
+  header > :first-child > :first-child {
+    margin-inline: auto;
+  }
+
+  nav > :last-child {
+    flex-wrap: wrap;
+  }
+
+  nav > :last-child > li {
+    flex-basis: 100%;
+    text-align: center;
+    /* border: 1px solid white; */
+  }
+  a {
+    justify-content: center;
+    /* border: 1px solid white; */
+  }
+  nav > :last-child {
+    gap: 0px;
+  }
+  header a {
+    padding-top: 0.7em;
+  }
+}
